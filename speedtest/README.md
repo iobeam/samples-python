@@ -6,7 +6,7 @@ Note: This uses the third-party [speedtest-cli](https://github.com/sivel/speedte
 
 ## Getting Started 
 
-1. If you haven't already: [register with iobeam](https://app.iobeam.com/signup), and create a new project.
+1. If you haven't already: [register with iobeam](https://app.iobeam.com/signup), and create a new project
 
 1. Grab your project's `ID` and `Project token` from the [Settings page](https://app.iobeam.com/)
 
@@ -16,5 +16,11 @@ Note: This uses the third-party [speedtest-cli](https://github.com/sivel/speedte
 
 1. Via your command-line, run the sample app: `python speedtest.py`
 
-Note:
-- The speedtest output results are also saved in a file (`speedtest.out`) in this same directory so you can easily look at the raw values.
+1. Look at your brand new data points via the [dashboard](https://app.iobeam.com/dashboard)
+
+Note: The speedtest output results are also saved in a file (`speedtest.out`) in this same directory so you can easily look at the raw values. The values will look something like this (but hopefully with faster speeds!):
+
+    Ping: 5.707 ms
+    Download: 4.75 Mbyte/s
+    Upload: 2.85 Mbyte/s
+
