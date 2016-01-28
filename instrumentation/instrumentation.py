@@ -31,6 +31,7 @@ import time
 PROJECT_ID = # YOUR PROJECT ID HERE (int)
 PROJECT_TOKEN = # YOUR PROJECT TOKEN HERE (String)
 DEVICE_ID = # ID FOR THIS DEVICE (String)
+DEVICE_NAME = # NAME FOR THIS DEVICE (String, can be the same as DEVICE_ID)
 
 ###########################
 # Template functions
@@ -50,7 +51,7 @@ def get_gps():
 ###########################
 def main():
   # Build iobeam client
-  builder = iobeam.ClientBuilder(PROJECT_ID, PROJECT_TOKEN).saveToDisk().registerOrSetId(DEVICE_ID)
+  builder = iobeam.ClientBuilder(PROJECT_ID, PROJECT_TOKEN).saveToDisk().registerOrSetId(DEVICE_ID, deviceName=DEVICE_NAME)
   client = builder.build()
 
   # Create data store with schema for transmitted data
